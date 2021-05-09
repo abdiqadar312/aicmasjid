@@ -1,7 +1,21 @@
+/*Available Fonts
+
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+*/
+
 *{
     padding: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    
+}
+
+body{
+   font-family: 'Lato', sans-serif; 
 }
 .header{
     min-height: 75vh;
@@ -11,14 +25,8 @@
     background-size: cover;
     position: relative;
 }
-/*
-.header img{
-    width: 100px;
-    height: 100px;
-    
-    
-}
-*/
+
+/*Navbar CSS*/
 nav{
     display: flex;
     padding: 2% 6%;
@@ -45,7 +53,7 @@ nav img{
     text-decoration: none;
 
 }
-/*nav bar css*/
+
 .nav-links ul li::after{
     content: '';
     width: 0%;
@@ -59,6 +67,7 @@ nav img{
     width: 100%;
     
 }
+/*Text Box CSS*/
 .text-box{
     width: 90%;
     color: #fff;
@@ -128,12 +137,18 @@ nav .fa{
     }
 }
 
-/*Notice*/
+/*NOTICE CSS*/
+
 .notice{
-    width: 80%;
-    margin: auto;
+    width: 100%;
     text-align: center;
-    padding-top: 600;
+}
+.notice img{
+    width: 400px;
+    height: inherit;
+    margin: auto;
+    padding-top: 0px;
+    padding-bottom: 10px;
 }
 p{
     font-size: 20px;
@@ -141,9 +156,45 @@ p{
 }
 
 
+.notice{
+    widows: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 15px;
+}
 
-/*Donate*/
-.donate{
+.notice-col{
+    flex-basis: 32%;
+    border-right: 10px;
+/*    margin-bottom: 30px;*/
+    margin-right: 30px;
+    margin-left: 30px;
+    position: relative;
+    overflow: hidden;
+    
+   
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.notice-column img{
+    width: 100%;
+    border-radius= 25px;
+    border-style: solid;
+}
+.notice-column iframe{
+    width: 100%;
+    border-radius= 25px;
+    border-style: solid;
+}
+
+
+
+/*SERVICE CSS*/
+.service{
     width: 80%;
     margin: auto;
     text-align: center;
@@ -166,7 +217,7 @@ p{
     justify-content: space-between;
     
 }
-.donate-col{
+.service-col{
     flex-basis: 31%;
     background: #fff3f3;
     border-radius: 10px;
@@ -182,7 +233,7 @@ h3{
     margin: 10px 0;
 }
 
-.donate-col:hover{
+.service-col:hover{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
 
@@ -192,16 +243,16 @@ h3{
     }
 }
 
-/*Css for Campus*/
+/*ABOUT CSS*/
 
-.campus{
+.about{
     widows: 80%;
     margin: auto;
     text-align: center;
     padding-top: 15px;
 }
 
-.campus-col{
+.about-col{
     flex-basis: 32%;
     border-right: 10px;
     margin-bottom: 30px;
@@ -209,8 +260,16 @@ h3{
     margin-left: 30px;
     position: relative;
     overflow: hidden;
+    
+   
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
 }
-.campus-column img{
+.about-column img{
     width: 100%;
     border-radius= 25px;
     border-style: solid;
@@ -246,14 +305,14 @@ layer:hover h3{
     opacity: 1;
 }
 
-/*facilities */
-.facilities{
+/*DONATE CSS */
+.donate{
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 20px;
 }
-.facilities p{
+.donate p{
     color: black;
     font-size: 20px;
     font-style: italic;
@@ -261,43 +320,51 @@ layer:hover h3{
     font-weight: bold;
     margin-bottom: 1em;
 }
-.facilities-col h4{
+.donate-col h4{
     text-align: center;
     margin-top: 0;
 }
-.facilities-col a{
+.donate-col a{
     text-decoration: none;
 }
 
-.facilities-col{
+.donate-col{
     flex-basis: 31%;
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
+    
+    flex-basis: 31%;
+    background: grey;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
 }
 
-.facilities-col img{
+.donate-col img{
     width: 100%;
     border-radius: 10px;
 }
 
-.facilities-col form{
+.donate-col form{
     text-align: center;
 }
-.facilities-col p{
+.donate-col p{
     padding: 0;
     
 }
-facilities-col h3{
+donate-col h3{
     margin-top: 16px;
     margin-bottom: 15px;
     text-align: left;
     text-decoration-line: none;
 }
 
-/*Testimonials*/
+/*Important Calenders and Prayer Times*/
 
-.testimonials {
+.prayer-times {
     width: 80%;
     margin: auto;
     padding-top: 0px;
@@ -305,9 +372,9 @@ facilities-col h3{
     
 }
 
-.testimonial-col{
+.prayer-times-col{
     flex-basis: 40%;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-bottom: 5%;
     text-align: left;
     background: #DDC413;
@@ -317,36 +384,28 @@ facilities-col h3{
 }
 
 
-.testimonial-col img{
-    height: 40px;
-    margin-left: 5px;
-    margin-right: 30px;
-    margin-left: 50px;
-    border-radius: 50%;
-}
-testimonial-col p{
+prayer-times-col p{
     padding: 0;
 }
 
-testimonial-col h1{
+prayer-times-col h1{
     margin-top: 15px;
     text-align: left;
 }
 
-.testimonial-col .fa{
-    color: #f4433f;
+
 }
 
 @media(max-width: 700px){
-    .testimonial-col img{
+    .prayer-times-col img{
         margin-left: 0px;
         margin-right: 15px;
     }
 }
 
-/*Call for Action*/
+/*MAP DIRECTION CSS*/
 
-.cta{
+.map-direction{
     margin: 100px auto;
     width: 80%;
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(contactus-bgd.jpg);
@@ -357,21 +416,21 @@ testimonial-col h1{
     padding: 100px 0;
 }
 
-.cta h1{
+.map-direction h1{
     color: #fff;
     margin-bottom: 40px;
     padding: 
 }
 
 @media(max-width: 700px){
-    .cta h1 {
+    .map-direction h1 {
         font-size: 24px;
     }
 }
 
 #desktop{display: none;}
 
-/*footer*/
+/*FOOTER CSS*/
 @media(max-width: 700px){
     #mobile {display: inline;}
     
@@ -402,11 +461,7 @@ testimonial-col h1{
     padding: 15px 0;
     font-size: 35px;
 }
-/*
-.fa-heart-o{
-    color: #f44336;
-}
-*/
+
 .footer p{
     color: black;
     font-family: serif;
@@ -429,6 +484,21 @@ testimonial-col h1{
 
 
 
+/*NOTES*/
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+/*
+@media screen and (max-width: 992px) {
+  
+}
+*/
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+/*
+@media screen and (max-width: 600px) {
+  
+}
+*/
 
 
 
