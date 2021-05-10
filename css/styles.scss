@@ -242,3 +242,22 @@ body{
         margin: auto;
     }
 }
+
+.footer{
+    width: 100%;
+    background-color: blanchedalmond;
+    bottom: 0;
+    padding: 20px 0;
+    .footer-wrapper{
+        width: 80%;
+        margin: auto;
+
+        p{
+            text-align: center;
+            text-transform: uppercase;
+            color: rgb(70, 70, 70);
+            font-size: 0.8em;
+
+        }
+    }
+}

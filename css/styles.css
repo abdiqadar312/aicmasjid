@@ -266,4 +266,23 @@ body {
   width: 80%;
   margin: auto;
 }
+
+.footer {
+  width: 100%;
+  background-color: blanchedalmond;
+  bottom: 0;
+  padding: 20px 0;
+}
+
+.footer .footer-wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+.footer .footer-wrapper p {
+  text-align: center;
+  text-transform: uppercase;
+  color: #464646;
+  font-size: 0.8em;
+}
 /*# sourceMappingURL=styles.css.map */
