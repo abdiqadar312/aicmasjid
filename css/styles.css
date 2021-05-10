@@ -265,6 +265,50 @@ body {
 .donate #donate {
   width: 80%;
   margin: auto;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.donate #donate p {
+  color: black;
+  font-size: 20px;
+  font-style: italic;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.donate #donate h4 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.donate #donate a {
+  text-decoration: none;
+}
+
+.donate #donate .donate-col {
+  -ms-flex-preferred-size: 31%;
+      flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  flex-basis: 31%;
+  background: grey;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.donate #donate .donate-col img {
+  width: 100%;
+  border-radius: 10px;
 }
 
 .footer {

@@ -240,6 +240,45 @@ body{
     #donate{
         width: 80%;
         margin: auto;
+        text-align: center;
+        padding-top: 20px;
+
+        p{
+            color: black;
+            font-size: 20px;
+            font-style: italic;
+            justify-content: center;
+            font-weight: bold;
+            margin-bottom: 1em;
+        }
+        h4{
+            text-align: center;
+            margin-top: 0;
+        }
+
+        a{
+            text-decoration: none;
+        }
+        .donate-col{
+            flex-basis: 31%;
+            border-radius: 10px;
+            margin-bottom: 5%;
+            text-align: left;
+            
+            flex-basis: 31%;
+            background: grey;
+            border-radius: 10px;
+            margin-bottom: 5%;
+            padding: 20px 12px;
+            box-sizing: border-box;
+            transition: 0.5s;
+
+            img{
+                width: 100%;
+                border-radius: 10px;
+            }
+            
+        }
     }
 }
 
@@ -261,3 +300,5 @@ body{
         }
     }
 }
+
+
