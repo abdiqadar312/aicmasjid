@@ -1,0 +1,244 @@
+/*Available Fonts
+
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+*/
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.main-header{
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.5), rgba(4,9,30,0.6)), url(../images/header-backgrd.jpg);
+    background-position: bottom;
+    background-size: cover;
+    height: 500px;
+
+    header{
+        width: 80%;
+        display: flex;
+        margin: auto;
+
+        nav{
+            display: flex;
+            padding: 2% 6%;
+            justify-content: space-between;
+           
+            align-items: flex-start;
+            font-weight: bold;
+            float: left;
+        }
+        nav img{
+            width: 150px;
+        }
+
+        .nav-links{
+            flex: 1;
+            text-align: right;
+            
+        }
+        .nav-links ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position: relative;
+            font-weight: bold;
+        }
+        .nav-links ul li a{
+            color: #fff;
+            text-decoration: none;
+        
+        }
+        
+        .nav-links ul li::after{
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #f44336;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+        }
+        .nav-links ul li:hover::after{
+            width: 100%;
+            
+        }
+       
+    }
+
+    .text-box{
+        width: 80%;
+        // display: flex;
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+
+        h1{
+            font-size: 2.2em;
+            color: burlywood;
+            font-family: 'Lora', serif;
+
+        }
+
+        p{
+            margin: 10px 0 40px;
+            font-size: 25px;
+            color: #fff;
+            font-weight: bold;
+            
+        }
+
+        .hero-btn{
+            display: inline-block;
+            text-decoration: none;
+            color: #000;
+            border: 1px solid #fff;
+            padding: 12px 34px;
+            font-size: 16px;
+            text-transform: uppercase;
+            background-color: #FFD800;
+            font-weight: bold;
+            
+            cursor: pointer;
+        }
+        .hero-btn:hover{
+            border: 1px solid #f44336;
+            background: #f44336;
+            transition: 1s;
+        }
+
+       
+    }
+
+    
+}
+
+.events{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    margin-bottom: 200px;
+    margin-top: 20px;
+
+
+    .event{
+        width: 80%;
+        margin: auto;
+        background-color: #FFEFD5;
+        padding: 25px;
+        display: flex;
+
+        h1{
+            font-size: 40px;
+            color: #FFB965;
+            font-weight: bold;
+        }
+        p{
+            line-height: 1.9em;
+        }
+
+        .reminders{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+
+
+            .reminder{
+                text-align: center;
+                height: auto;
+                padding: 10px;
+
+                img{
+                    width: 60px;
+                    height: auto;
+                }
+
+                p{
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .event-img{
+            width: 50%;
+            height: auto;
+            text-align: right;
+            img{
+                width: 400px;
+            }
+        }
+    }
+
+
+}
+
+.service{
+    width: 100%;
+
+    #service{
+        width: 80%;
+        margin: auto;
+    }
+}
+.about{
+    width: 100%;
+    #about{
+        text-align: center;
+        width: 80%;
+        margin: auto;
+
+        h1{
+            font-size: 2em;
+            text-transform: uppercase;
+            font-family: 'Lora', serif;
+
+        }
+
+        p{
+            font-size: 1.2em;
+            line-height: 1.9em;
+        }
+
+       .row{
+           display: flex;
+           justify-content: space-evenly;
+           img{
+               margin-left: 10px;
+           }
+       }
+        
+    }
+}
+
+.prayer-times{
+    width: 100%;
+    #prayer-times{
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+
+    .prayer-times-col{
+        flex-basis: 20%;
+        border-radius: 5px;
+        margin-bottom: 5%;
+        text-align: left;
+        background: #DDC413;
+        padding: 25px;
+        cursor: pointer;
+        display: flex;
+    }
+    
+}
+
+.donate{
+    width: 100%;
+    #donate{
+        width: 80%;
+        margin: auto;
+    }
+}

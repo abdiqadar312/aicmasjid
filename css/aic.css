@@ -20,7 +20,7 @@ body{
 .header{
     min-height: 75vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.5), rgba(4,9,30,0.6)), url(header-backgrd.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.5), rgba(4,9,30,0.6)), url(../images/header-backgrd.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -373,7 +373,7 @@ donate-col h3{
 }
 
 .prayer-times-col{
-    flex-basis: 40%;
+    flex-basis: 20%;
     border-radius: 5px;
     margin-bottom: 5%;
     text-align: left;
