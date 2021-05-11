@@ -251,7 +251,7 @@ body{
 .donate{
     width: 100%;
     #donate{
-        width: 80%;
+        width: 90%;
         margin: auto;
         text-align: center;
         padding-top: 20px;
@@ -271,6 +271,28 @@ body{
 
         a{
             text-decoration: none;
+        }
+        .row{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            .donate-col{
+                // background-color: rgb(233, 227, 219);
+                margin-left: 10px;
+                text-align: center;
+                height: auto;
+                color: black;
+                a{
+                    color: black;
+                }
+                img{
+                    border-radius: 50px;
+
+                }
+
+                
+            }
+
         }
      
     }
@@ -356,52 +378,53 @@ body{
             
         }
     }
-
-    .donate-col{
-        flex-basis: 31%;
-        border-radius: 10px;
-        margin-bottom: 5%;
-        text-align: left;
-        
-        flex-basis: 31%;
-        background: grey;
-        border-radius: 10px;
-        margin-bottom: 5%;
-        padding: 20px 12px;
-        box-sizing: border-box;
-        transition: 0.5s;
-
-        img{
-            width: 100%;
-            border-radius: 10px;
-        }
-        
-    }
+    .donate{
+        width: 100%;
+        #donate{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding-top: 20px;
     
+            p{
+                color: black;
+                font-size: 20px;
+                font-style: italic;
+                justify-content: center;
+                font-weight: bold;
+                margin-bottom: 1em;
+            }
+            h4{
+                text-align: center;
+                margin-top: 0;
+            }
+    
+            a{
+                text-decoration: none;
+            }
+            .row{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                .donate-col{
+                    margin-bottom: 20px;
+                    padding: 10px;
+                    img{
+                        width: 100%;
+                    }
+    
+                    
+                }
+    
+            }
+         
+        }
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    .donate-col{
-        flex-basis: 31%;
-        border-radius: 10px;
-        margin-bottom: 5%;
-        text-align: left;
-        
-        flex-basis: 31%;
-        background: grey;
-        border-radius: 10px;
-        margin-bottom: 5%;
-        padding: 20px 12px;
-        box-sizing: border-box;
-        transition: 0.5s;
-
-        img{
-            width: 100%;
-            border-radius: 10px;
-        }
-        
-    }
+    
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
