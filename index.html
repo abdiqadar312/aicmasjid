@@ -25,7 +25,7 @@
 
       <nav>
 
-          <div class="nav-links" id="navLinks">
+          <div class="nav-links show-menu" id="navLinks">
              <i class="fa fa-times menu-icon" onclick="hideMenu()"></i>
               <ul>
                   <li><a href="index.html">HOME</a></li>
@@ -273,14 +273,20 @@
    
 <!--   JavaScript for Toggle Menu ----->
     <script>
-        var navLinks = document.getElementById("navLinks");
+        // var navLinks = document.getElementById("navLinks");
+        
+
         function showMenu(){
-            navLinks.style.right = "0";
-            navLinks.style.display = "inline";
+            var navLinks = document.getElementById("navLinks");
+            navLinks.classList.add("show-menu");
+            navLinks.classList.remove("hide-menu");
+            
         }
         function hideMenu(){
-//            navLinks.style.display = "none";
-            navLinks.style.right = "-200px";
+            console.log("Hiding the menu")
+            var navLinks = document.getElementById("navLinks");
+            navLinks.classList.add("hide-menu");
+            navLinks.classList.remove("show-menu");
         }
     </script>
 </body>
