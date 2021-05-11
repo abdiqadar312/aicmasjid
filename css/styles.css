@@ -29,6 +29,16 @@ body {
   margin: auto;
 }
 
+.main-header header .brand {
+  width: auto;
+  padding: 10px;
+}
+
+.main-header header .brand img {
+  width: 90px;
+  height: auto;
+}
+
 .main-header header nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,6 +134,11 @@ body {
   background: #f44336;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+.menu-icon {
+  display: none;
+  color: #fff;
 }
 
 .events {

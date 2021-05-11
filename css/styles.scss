@@ -24,6 +24,15 @@ body{
         display: flex;
         margin: auto;
 
+        .brand{
+            width: auto;
+            padding: 10px;
+            img{
+                width: 90px;
+                height: auto;
+            }
+        }
+
         nav{
             display: flex;
             padding: 2% 6%;
@@ -115,6 +124,12 @@ body{
        
     }
 
+    
+}
+
+.menu-icon{
+    display: none;
+    color: #fff;
     
 }
 
