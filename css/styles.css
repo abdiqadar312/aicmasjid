@@ -289,28 +289,6 @@ body {
   text-decoration: none;
 }
 
-.donate #donate .donate-col {
-  -ms-flex-preferred-size: 31%;
-      flex-basis: 31%;
-  border-radius: 10px;
-  margin-bottom: 5%;
-  text-align: left;
-  flex-basis: 31%;
-  background: grey;
-  border-radius: 10px;
-  margin-bottom: 5%;
-  padding: 20px 12px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.donate #donate .donate-col img {
-  width: 100%;
-  border-radius: 10px;
-}
-
 .footer {
   width: 100%;
   background-color: blanchedalmond;
@@ -329,4 +307,98 @@ body {
   color: #464646;
   font-size: 0.8em;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .events {
+    margin-bottom: 500px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .events .event {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .events .event .reminders .reminder img {
+    width: 60px;
+    height: auto;
+  }
+  .events .event .event-img {
+    width: 50%;
+    height: auto;
+    text-align: right;
+  }
+  .events .event .event-img img {
+    width: 400px;
+  }
+  .about #about .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .about #about .row img {
+    margin-bottom: 20px;
+  }
+  .donate-col {
+    -ms-flex-preferred-size: 31%;
+        flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    flex-basis: 31%;
+    background: grey;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .donate-col img {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .donate-col {
+    -ms-flex-preferred-size: 31%;
+        flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    flex-basis: 31%;
+    background: grey;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .donate-col img {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 /*# sourceMappingURL=styles.css.map */

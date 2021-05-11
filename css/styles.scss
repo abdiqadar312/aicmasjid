@@ -124,8 +124,6 @@ body{
     display: flex;
     margin-bottom: 200px;
     margin-top: 20px;
-
-
     .event{
         width: 80%;
         margin: auto;
@@ -259,26 +257,7 @@ body{
         a{
             text-decoration: none;
         }
-        .donate-col{
-            flex-basis: 31%;
-            border-radius: 10px;
-            margin-bottom: 5%;
-            text-align: left;
-            
-            flex-basis: 31%;
-            background: grey;
-            border-radius: 10px;
-            margin-bottom: 5%;
-            padding: 20px 12px;
-            box-sizing: border-box;
-            transition: 0.5s;
-
-            img{
-                width: 100%;
-                border-radius: 10px;
-            }
-            
-        }
+     
     }
 }
 
@@ -302,3 +281,119 @@ body{
 }
 
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .events{
+        margin-bottom: 500px;
+
+        flex-direction: row-reverse;
+
+        .event{
+
+            flex-direction: row;
+    
+
+    
+            .reminders{
+
+
+    
+    
+                .reminder{
+
+    
+                    img{
+                        width: 60px;
+                        height: auto;
+                    }
+    
+
+                }
+            }
+            .event-img{
+                width: 50%;
+                height: auto;
+                text-align: right;
+                img{
+                    width: 400px;
+                }
+            }
+        }
+    
+    
+    }
+
+    .about{
+        
+        #about{
+
+    
+           .row{
+               display: flex;
+               flex-direction: row;
+               flex-wrap: wrap;
+
+               justify-content: space-evenly;
+               img{
+                   margin-bottom: 20px;
+               }
+           }
+            
+        }
+    }
+
+    .donate-col{
+        flex-basis: 31%;
+        border-radius: 10px;
+        margin-bottom: 5%;
+        text-align: left;
+        
+        flex-basis: 31%;
+        background: grey;
+        border-radius: 10px;
+        margin-bottom: 5%;
+        padding: 20px 12px;
+        box-sizing: border-box;
+        transition: 0.5s;
+
+        img{
+            width: 100%;
+            border-radius: 10px;
+        }
+        
+    }
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .donate-col{
+        flex-basis: 31%;
+        border-radius: 10px;
+        margin-bottom: 5%;
+        text-align: left;
+        
+        flex-basis: 31%;
+        background: grey;
+        border-radius: 10px;
+        margin-bottom: 5%;
+        padding: 20px 12px;
+        box-sizing: border-box;
+        transition: 0.5s;
+
+        img{
+            width: 100%;
+            border-radius: 10px;
+        }
+        
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
