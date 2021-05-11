@@ -366,7 +366,7 @@ body {
     height: 100vh;
     width: 180px;
     top: 0;
-    right: -200;
+    right: 0;
     text-align: left;
     z-index: 2;
     -webkit-transition: 1s;
