@@ -354,9 +354,6 @@ body {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  header .nav-links ul li {
-    display: block;
-  }
   header .hide-menu {
     display: none !important;
   }
@@ -372,15 +369,18 @@ body {
     -webkit-transition: 1s;
     transition: 1s;
   }
-  header nav .fa {
+  header .show-menu .fa {
     display: block;
     color: #fff;
     margin: 10px;
     font-size: 22px;
     cursor: pointer;
   }
-  header .nav-links ul {
+  header .show-menu ul {
     padding: 30px;
+  }
+  header .show-menu ul li {
+    display: block;
   }
   .events {
     margin-bottom: 500px;

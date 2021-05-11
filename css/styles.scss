@@ -330,9 +330,7 @@ body{
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     header{
-        .nav-links ul li{
-            display: block;
-        }
+        
         .hide-menu{
             display: none !important;
         }
@@ -347,6 +345,21 @@ body{
             text-align: left;
             z-index: 2;
             transition: 1s;
+
+            .fa{
+                display: block;
+                color: #fff;
+                margin: 10px;
+                font-size: 22px;
+                cursor: pointer;
+            }
+            ul{
+                padding: 30px;
+            }
+
+            ul li{
+                display: block;
+            }
         }
 
         // .nav-links{
@@ -360,16 +373,7 @@ body{
         //     z-index: 2;
         //     transition: 1s;
         // }
-        nav .fa{
-            display: block;
-            color: #fff;
-            margin: 10px;
-            font-size: 22px;
-            cursor: pointer;
-        }
-        .nav-links ul{
-            padding: 30px;
-        }
+        
     }
 
     .events{
